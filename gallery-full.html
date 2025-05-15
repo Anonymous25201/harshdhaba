@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Harsh Dhaba and Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon_harsh.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- ... (Copy header, mark "Gallery" as active) ... -->
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo_harsh_dhaba.png" alt="Harsh Dhaba and Restaurant Logo" class="logo">
+                <h1>Harsh Dhaba and Restaurant</h1>
+            </a>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-full.html">Our Story</a></li>
+                    <li><a href="menu-full.html">Menu</a></li>
+                    <li><a href="gallery-full.html" class="active">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact & Location</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+911234567890" class="phone-cta"><i class="fas fa-phone"></i> Call Us</a>
+                <a href="#" class="btn btn-primary order-online-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner" style="background-image: url('images/gallery_banner.jpg');"> <!-- Add gallery_banner.jpg -->
+            <div class="container">
+                <h1>A Glimpse of Our World</h1>
+                <p>Explore the food, ambiance, and happy moments at Harsh Dhaba.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="full-gallery-grid">
+                    <!-- Add many more images here -->
+                    <div class="gallery-image-item">
+                        <img src="images/food1.jpg" alt="Delicious Dal Makhani">
+                        <div class="caption">Our Signature Dal Makhani</div>
+                    </div>
+                    <div class="gallery-image-item">
+                        <img src="images/food2.jpg" alt="Succulent Butter Chicken">
+                        <div class="caption">Rich Butter Chicken</div>
+                    </div>
+                    <div class="gallery-image-item">
+                        <img src="images/vibe1.jpg" alt="Interior seating of Harsh Dhaba">
+                        <div class="caption">Comfortable Dhaba Seating</div>
+                    </div>
+                    <div class="gallery-image-item">
+                        <img src="images/vibe2.jpg" alt="Exterior view of Harsh Dhaba">
+                        <div class="caption">Welcome to Harsh Dhaba</div>
+                    </div>
+                    <div class="gallery-image-item">
+                        <img src="images/food_platter.jpg" alt="A full Indian food platter"> <!-- Add food_platter.jpg -->
+                        <div class="caption">A Feast for Your Senses</div>
+                    </div>
+                    <div class="gallery-image-item">
+                        <img src="images/tandoor_in_action.jpg" alt="Chef working at the tandoor"> <!-- Add tandoor_in_action.jpg -->
+                        <div class="caption">Fresh from the Tandoor</div>
+                    </div>
+                    <div class="gallery-image-item">
+                        <img src="images/happy_customers.jpg" alt="Happy customers dining"> <!-- Add happy_customers.jpg -->
+                        <div class="caption">Smiles All Around!</div>
+                    </div>
+                    <div class="gallery-image-item">
+                        <img src="images/lassi_glass.jpg" alt="Refreshing glass of lassi"> <!-- Add lassi_glass.jpg -->
+                        <div class="caption">Cooling Lassi</div>
+                    </div>
+                     <!-- Add more gallery items as needed (8-12 or more is good for a full page) -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="currentYear"></span> Harsh Dhaba and Restaurant. All Rights Reserved. | Visit us in Khairthal!</p>
+            <p>Designed with <i class="fas fa-heart"></i> by [PKB]</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <!-- For a more advanced gallery, you might add a lightbox script here -->
+</body>
+</html>

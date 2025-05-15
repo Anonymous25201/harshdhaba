@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Language set to English -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Dhaba and Restaurant - Authentic Indian Cuisine in Khairthal</title> <!-- Updated Title -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon_harsh.ico" type="image/x-icon"> <!-- Consider a new favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts (Poppins & Lobster from previous English version) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo_harsh_dhaba.png" alt="Harsh Dhaba and Restaurant Logo" class="logo"> <!-- Update with your logo -->
+                <h1>Harsh Dhaba and Restaurant</h1>
+            </a>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+<!-- Inside <header> -> <nav> -> <ul class="nav-menu"> in ALL HTML files -->
+    <ul class="nav-menu">
+        <li><a href="index.html#home">Home</a></li> <!-- Or just index.html -->
+        <li><a href="about-full.html">Our Story</a></li> <!-- Link to the new page -->
+        <li><a href="menu-full.html">Menu</a></li>     <!-- Link to the new page -->
+        <li><a href="gallery-full.html">Gallery</a></li> <!-- Link to the new page -->
+        <li><a href="index.html#contact">Contact & Location</a></li> <!-- Or contact.html if you make a separate one -->
+    </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+919251336336" class="phone-cta"><i class="fas fa-phone"></i> Call Us</a>
+                <a href="#" class="btn btn-primary order-online-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Authentic Flavours, Your Highway Delight in Khairthal!</h2>
+                <p>Experience traditional Indian hospitality at Harsh Dhaba and Restaurant, conveniently located on Kishangarh Road.</p>
+                <a href="#menu" class="btn btn-secondary">View Our Menu</a>
+            </div>
+        </section>
+
+        <!-- About Us Snippet -->
+        <section id="about" class="about-snippet section-padding">
+            <div class="container">
+                <h2 class="section-title">Welcome to Harsh Dhaba!</h2>
+                <div class="about-content">
+                    <img src="images/vibe1.jpg" alt="Interior of Harsh Dhaba and Restaurant" class="about-image">
+                    <div>
+                        <p>Harsh Dhaba and Restaurant has been proudly serving delicious, home-style Indian food to travelers and locals alike in Khairthal. We believe in the simple joy of good food – fresh ingredients, generous portions, and a welcoming atmosphere.</p>
+                        <p>From sizzling tandoori starters to hearty curries and freshly baked breads, every dish is prepared with care, bringing you the true taste of India.</p>
+                        <a href="about-full.html" class="btn btn-outline">Read Our Full Story</a> <!-- You'd create about-full.html -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Dishes / Specials -->
+        <section id="specials" class="specials section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Today's Favourites</h2>
+                <div class="dishes-grid">
+                    <div class="dish-card">
+                        <img src="images/food1.png" alt="Dal Makhani">
+                        <h3>Dal Makhani</h3>
+                        <p>Creamy black lentils slow-cooked to perfection.</p>
+                        <span class="price">₹250</span>
+                    </div>
+                    <div class="dish-card">
+                        <img src="images/food2.png" alt="Butter Chicken">
+                        <h3>Butter Chicken</h3>
+                        <p>Tender chicken in a rich tomato and butter gravy.</p>
+                        <span class="price">₹350</span>
+                    </div>
+                    <div class="dish-card">
+                        <img src="images/food3.png" alt="Tandoori Roti">
+                        <h3>Tandoori Roti</h3>
+                        <p>Whole wheat bread baked in a traditional tandoor.</p>
+                        <span class="price">₹30</span>
+                    </div>
+                     <div class="dish-card">
+                        <img src="images/food4.png" alt="Masala Lassi">
+                        <h3>Masala Papad</h3>
+                        <p>Where Crunch Meets Masala Magic.</p>
+                        <span class="price">₹100</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#menu" class="btn btn-primary">Explore Full Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Snippet -->
+        <section id="menu" class="menu-snippet section-padding">
+            <div class="container">
+                <h2 class="section-title">Our Dhaba Menu</h2>
+                <p class="text-center">Discover a wide range of authentic Indian dishes, from flavorful curries and tandoori delights to refreshing beverages. <br>There's something for everyone at Harsh Dhaba!</p>
+                <div class="menu-categories">
+                    <span>Starters</span> | <span>Main Course (Veg)</span> | <span>Main Course (Non-Veg)</span> | <span>Breads</span> | <span>Rice & Biryani</span> | <span>Desserts</span> | <span>Beverages</span>
+                </div>
+                <div class="text-center">
+                    <a href="menu-full.pdf" class="btn btn-secondary" target="_blank">View Full Menu (PDF)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dhaba Vibes / Gallery -->
+        <section id="gallery" class="gallery section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Glimpses of Harsh Dhaba</h2>
+                <div class="gallery-grid">
+                    <img src="images/vibe1.jpg" alt="Dhaba Interior Ambience">
+                    <img src="images/food1.jpg" alt="Close up of Dal Makhani dish">
+                    <img src="images/vibe2.jpg" alt="Outdoor seating or Dhaba sign detail">
+                    <img src="images/food2.jpg" alt="Butter Chicken served on a platter">
+                    <img src="images/food3.jpg" alt="Stack of freshly baked Tandoori Roti">
+                    <img src="images/food4.jpg" alt="Tall glass of refreshing Lassi">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials section-padding">
+            <div class="container">
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-item">
+                        <img src="images/testimonial1.jpg" alt="Happy Customer Photo" class="testimonial-avatar">
+                        <p>"The food at Harsh Dhaba is simply amazing! Authentic taste and great service. A must-visit on Kishangarh Road."</p>
+                        <h4>- Anjali K.</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="images/testimonial2.jpg" alt="Another Happy Customer" class="testimonial-avatar">
+                        <p>"We stopped by Harsh Dhaba during our road trip and were so glad we did. The lassi and parathas were perfect!"</p>
+                        <h4>- Vikram S.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Location -->
+        <section id="contact" class="contact section-padding bg-dark text-light">
+            <div class="container">
+                <h2 class="section-title">Visit Us in Khairthal, Rajasthan</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Harsh Dhaba and Restaurant</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Opp. Galaxy Green City,<br>Kishangarh Road,<br>Khairthal, Rajasthan - [301404]</p> <!-- Updated Address -->
+                        <p><i class="fas fa-phone"></i> <a href="tel:+91YOURPHONENUMBER">+91 [9251336336]</a></p> <!-- Update Phone -->
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@harshdhaba.com">harshrestaurantkhairthal@gmail.com</a></p> <!-- Update Email -->
+                        <p><i class="fas fa-clock"></i> Open Daily: 11:00 AM - 11:00 PM (Example)</p>
+                        <div class="social-links">
+                            
+                            <a href="#" aria-label="YourOtherSocialMedia"><i class="fab fa-tripadvisor"></i></a> <!-- Example: TripAdvisor -->
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <!--
+                            IMPORTANT: Replace this iframe src with the Google Maps embed code for YOUR dhaba's exact location.
+                            1. Go to Google Maps.
+                            2. Search for "Harsh Dhaba, Opp. Galaxy Green City, Kishangarh Road, Khairthal, Rajasthan" (or the most accurate address).
+                            3. Click "Share".
+                            4. Click "Embed a map".
+                            5. Copy the HTML (iframe code) and paste it below, replacing the existing src.
+                        -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28233.905587955043!2d76.658188!3d27.802438000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972bac4873e97c9%3A0x4c240c12b0000000!2sHarsh%20Restaurant%20Khairthal!5e0!3m2!1sen!2sin!4v1747290176253!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p style="font-size: 0.8em; margin-top: 5px;">Note: Map is a placeholder. Please update with exact location.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="currentYear"></span> Harsh Dhaba and Restaurant. All Rights Reserved. | Visit us in Khairthal!</p>
+            <p>Designed with <i class="fas fa-heart"></i> by [PKB]</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
