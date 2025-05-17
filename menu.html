@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Harsh Dhaba and Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon_harsh.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- ... (Copy header from about-full.html, mark "Menu" as active) ... -->
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo_harsh_dhaba.png" alt="Harsh Dhaba and Restaurant Logo" class="logo">
+                <h1>Harsh Dhaba and Restaurant</h1>
+            </a>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact & Location</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:+911234567890" class="phone-cta"><i class="fas fa-phone"></i> Call Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner" style="background-image: url('images/menu_banner.jpg');"> <!-- Add menu_banner.jpg -->
+            <div class="container">
+                <h1>Savour Our Flavours</h1>
+                <p>Authentic Indian cuisine, made fresh to order.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="menu-download text-center">
+                    <p>Prefer to view our menu offline? Download it here!</p>
+                    <a href="MENU.pdf" class="btn btn-primary" download="Harsh_Dhaba_Menu.pdf">
+                        <i class="fas fa-download"></i> Download Our Menu (PDF)
+                    </a>
+                    <hr class="menu-divider">
+                </div>
+
+                <div class="full-menu-display">
+                    <!-- Appetizers -->
+                    <div class="menu-category">
+                        <h2><i class="fas fa-pepper-hot"></i> Appetizers / Starters</h2>
+                        <div class="menu-items-grid">
+                            <div class="menu-item">
+                                <h3>Paneer Tikka</h3>
+                                <p>Cubes of cottage cheese marinated in spices and grilled in a tandoor.</p>
+                                <span class="price">₹280</span>
+                            </div>
+                            <div class="menu-item">
+                                <h3>Masala Papad</h3>
+                                <p>Crispy papad topped with chopped onions, tomatoes, and spices.</p>
+                                <span class="price">₹80</span>
+                            </div>
+                            <div class="menu-item">
+                                <h3>Hara Bhara Kebab</h3>
+                                <p>Spinach, peas, and potato patties, spiced and shallow fried.</p>
+                                <span class="price">₹220</span>
+                            </div>
+                            <!-- Add more appetizer items -->
+                        </div>
+                    </div>
+
+                    <!-- Vegetarian Main Course -->
+                    <div class="menu-category">
+                        <h2><i class="fas fa-carrot"></i> Vegetarian Main Course</h2>
+                        <div class="menu-items-grid">
+                            <div class="menu-item">
+                                <h3>Dal Makhani</h3>
+                                <p>Black lentils and kidney beans slow-cooked in a creamy tomato gravy.</p>
+                                <span class="price">₹250</span>
+                            </div>
+                            <div class="menu-item">
+                                <h3>Paneer Butter Masala</h3>
+                                <p>Cottage cheese cubes in a rich, creamy tomato and cashew gravy.</p>
+                                <span class="price">₹320</span>
+                            </div>
+                            <div class="menu-item">
+                                <h3>Malai Kofta</h3>
+                                <p>Deep-fried cottage cheese and vegetable dumplings in a smooth, rich gravy.</p>
+                                <span class="price">₹300</span>
+                            </div>
+                            <!-- Add more veg main course items -->
+                        </div>
+                    </div>
+
+                    <!-- Non-Vegetarian Main Course -->
+                    <div class="menu-category">
+                        <h2><i class="fas fa-drumstick-bite"></i> Non-Vegetarian Main Course</h2>
+                        <div class="menu-items-grid">
+                            <div class="menu-item">
+                                <h3>Butter Chicken</h3>
+                                <p>Tender chicken pieces cooked in a rich tomato and butter gravy.</p>
+                                <span class="price">₹380</span>
+                            </div>
+                            <div class="menu-item">
+                                <h3>Mutton Rogan Josh</h3>
+                                <p>Aromatic Kashmiri lamb curry cooked with traditional spices.</p>
+                                <span class="price">₹450</span>
+                            </div>
+                            <!-- Add more non-veg items -->
+                        </div>
+                    </div>
+
+                    <!-- Breads -->
+                    <div class="menu-category">
+                        <h2><i class="fas fa-bread-slice"></i> Breads (Roti, Naan, Paratha)</h2>
+                         <div class="menu-items-grid">
+                            <div class="menu-item">
+                                <h3>Tandoori Roti</h3>
+                                <p>Whole wheat bread baked in a tandoor.</p>
+                                <span class="price">₹30</span>
+                            </div>
+                            <div class="menu-item">
+                                <h3>Butter Naan</h3>
+                                <p>Soft leavened bread baked in tandoor, topped with butter.</p>
+                                <span class="price">₹60</span>
+                            </div>
+                            <!-- Add more bread items -->
+                        </div>
+                    </div>
+                     <!-- Add more categories like Rice & Biryani, Desserts, Beverages -->
+                </div>
+                 <p class="text-center" style="margin-top: 30px; font-style: italic;">All prices are in INR. Taxes as applicable. Please inform us of any allergies.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="currentYear"></span> Harsh Dhaba and Restaurant. All Rights Reserved. | Visit us in Khairthal!</p>
+            <p>Designed with <i class="fas fa-heart"></i> by [PKB]</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
