@@ -4,8 +4,8 @@
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/contact", "destination": "/gallery.html" },
-    { "source": "/contact", "destination": "/menu.html" }
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/menu", "destination": "/menu.html" }
 
   ]
 }
