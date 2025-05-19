@@ -9,9 +9,9 @@ export const config = {
 };
 
 cloudinary.config({
-  cloud_name: process.env.di0plz1ih,
-  api_key: process.env.921719323831394,
-  api_secret: process.env.sZ9HA_VOewCJZz6H_lzndzpnr2I,
+ cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 const upload = multer();
