@@ -95,8 +95,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000); // Change every 5 seconds
     }
 
-    function handleUpload(e) {
-  const file = e.target.files[0];
+   function uploadImage() {
+  const input = document.getElementById('fileInput');
+  const file = input.files[0];
+  if (!file) {
+    alert("Please select a file");
+    return;
+  }
+
   const formData = new FormData();
   formData.append('image', file);
 
@@ -108,16 +114,16 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(data => {
       if (data.url) {
         alert('Image uploaded: ' + data.url);
+        console.log('Uploaded Image URL:', data.url);
       } else {
-        alert('Upload failed.');
+        alert('Upload failed: ' + (data.error || 'Unknown error'));
       }
     })
     .catch(err => {
-      console.error(err);
+      console.error('Upload error:', err);
       alert('Something went wrong.');
     });
 }
 
-<input type="file" onChange={handleUpload} />
 
 });
