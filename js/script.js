@@ -95,4 +95,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000); // Change every 5 seconds
     }
 
+    function handleUpload(e) {
+  const file = e.target.files[0];
+  const formData = new FormData();
+  formData.append('image', file);
+
+  fetch('/api/upload', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.url) {
+        alert('Image uploaded: ' + data.url);
+      } else {
+        alert('Upload failed.');
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      alert('Something went wrong.');
+    });
+}
+
+<input type="file" onChange={handleUpload} />
+
 });
