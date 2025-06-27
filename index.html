@@ -1,1029 +1,139 @@
-/* Basic Reset & Variables */
-:root {
-    --primary-color: #D9534F; /* Terracotta Red / Orange */
-    --secondary-color: #F0AD4E; /* Mustard Yellow */
-    --accent-color: #5CB85C; /* Dhaba Green */
-    --text-color: #333;
-    --light-text-color: #f8f8f8;
-    --bg-color: #FDF5E6; /* Creamy/Light Beige background */
-    --dark-bg-color: #2c3e50; /* Darker background for contrast */
-    --font-primary: 'Poppins', sans-serif; /* Example font, choose one you like */
-    --font-display: 'Lobster', cursive; /* Example for headings, more decorative */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--font-primary);
-    line-height: 1.6;
-    color: var(--text-color);
-    overflow-x: hidden;
-    background-color: var(--bg-color);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Typography */
-h1, h2, h3, h4 {
-    font-family: var(--font-display);
-    color: var(--primary-color);
-    margin-bottom: 0.8em;
-}
-h1 { font-size: 2.8em; }
-h2.section-title {
-    font-size: 2.2em;
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
-    padding-bottom: 10px;
-}
-h2.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: var(--secondary-color);
-}
-
-p {
-    margin-bottom: 1em;
-}
-
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-a:hover {
-    color: var(--secondary-color);
-}
-
-/* Header */
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo-link {
-    display: flex;
-    align-items: center;
-}
-.logo {
-    height: 50px;
-    margin-right: 10px;
-}
-header h1 {
-    font-size: 1.8em; /* Smaller for header */
-    margin-bottom: 0;
-    color: var(--text-color);
-}
-.nav-menu {
-    list-style: none;
-    display: flex;
-}
-.nav-menu li {
-    margin-left: 25px;
-}
-.nav-menu a {
-    font-weight: 600;
-    color: var(--text-color);
-    transition: color 0.3s ease;
-}
-.nav-menu a:hover, .nav-menu a.active {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
-}
-.menu-toggle {
-    display: none; /* Hidden on desktop */
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: var(--text-color);
-}
-.header-actions {
-    display: flex;
-    align-items: center;
-}
-.phone-cta {
-    margin-right: 15px;
-    font-weight: 600;
-    color: var(--accent-color);
-}
-.phone-cta i {
-    margin-right: 5px;
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
-    border: none;
-}
-.btn-primary {
-    background-color: var(--primary-color);
-    color: white;
-}
-.btn-primary:hover {
-    background-color: #c0392b; /* Darker primary */
-    color: white;
-    transform: translateY(-2px);
-}
-.btn-secondary {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
-.btn-secondary:hover {
-    background-color: #d39e41; /* Darker secondary */
-    color: var(--text-color);
-    transform: translateY(-2px);
-}
-.btn-outline {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-}
-.btn-outline:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-}
+<!doctypehtml>
+<html lang=en>
+<meta charset=UTF-8>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>Harsh Dhaba and Restaurant - Authentic Indian Cuisine in Khairthal</title>
+<link href=css/style.css rel=stylesheet>
+<link href=images/favicon_harsh.ico rel=icon type=image/x-icon>
+<link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css rel=stylesheet>
+<link href=https://fonts.googleapis.com rel=preconnect>
+<link href=https://fonts.gstatic.com rel=preconnect crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600;700&display=swap" rel=stylesheet>
+<div id=preloader>
+	<div class=handi>
+		<div class="bubble bubble1"></div>
+		<div class="bubble bubble2"></div>
+		<div class="steam steam1"></div>
+		<div class="steam steam2"></div>
+	</div>
+	<p>Cooking up something delicious…</div>
+        <body>
+<header>
+	<div class=container>
+		<a href=index.html class=logo-link><img alt="Harsh Dhaba and Restaurant Logo" src=images/logo_harsh_dhaba.png class=logo>
+			<h1>Harsh Dhaba and Restaurant</h1></a>
+		<nav>
+			<button aria-expanded=false aria-label="Toggle navigation" class=menu-toggle><i class="fas fa-bars"></i></button>
+			<ul class=nav-menu>
+				<li><a href=index.html#home>Home</a>
+					<li><a href=about.html>Our Story</a>
+						<li><a href=menu-.html>Menu</a>
+							<li><a href=gallery.html>Gallery</a>
+								<li><a href=index.html#contact>Contact & Location</a></ul>
+		</nav>
+		<div class=header-actions><a href=tel:+919251336336 class=phone-cta><i class="fas fa-phone"></i> Call Us</a></div>
+	</div>
+</header>
+<main>
+	<section class=hero id=home>
+		<div class=hero-content>
+			<h2>Authentic Flavours, Your Highway Delight in Khairthal!</h2>
+			<p>Experience traditional Indian hospitality at Harsh Dhaba and Restaurant, conveniently located on Kishangarh Road.</p><a href=#menu class="btn btn-secondary">View Our Menu</a></div>
+	</section>
+	<section class="section-padding about-snippet" id=about>
+		<div class=container>
+			<h2 class=section-title>Welcome to Harsh Dhaba!</h2>
+			<div class=about-content><img alt="Interior of Harsh Dhaba and Restaurant" src=images/vibe1.jpg class=about-image>
+				<div>
+					<p>Harsh Dhaba and Restaurant has been proudly serving delicious, home-style Indian food to travelers and locals alike in Khairthal. We believe in the simple joy of good food – fresh ingredients, generous portions, and a welcoming atmosphere.
+						<p>From sizzling tandoori starters to hearty curries and freshly baked breads, every dish is prepared with care, bringing you the true taste of India.</p><a href=about.html class="btn btn-outline">Read Our Full Story</a></div>
+			</div>
+		</div>
+	</section>
+	<section class="section-padding bg-light specials" id=specials>
+		<div class=container>
+			<h2 class=section-title>Today's Favourites</h2>
+			<div class=dishes-grid>
+				<div class=dish-card><img alt="Dal Makhani" src=images/food1.png>
+					<h3>Dal Makhani</h3>
+					<p>Creamy black lentils slow-cooked to perfection.</p><span class=price>₹</span></div>
+				<div class=dish-card><img alt="Butter Chicken" src=images/food2.png>
+					<h3>Butter Chicken</h3>
+					<p>Tender chicken in a rich tomato and butter gravy.</p><span class=price>₹</span></div>
+				<div class=dish-card><img alt="Tandoori Roti" src=images/food3.png>
+					<h3>Tandoori Roti</h3>
+					<p>Whole wheat bread baked in a traditional tandoor.</p><span class=price>₹</span></div>
+				<div class=dish-card><img alt="Masala Lassi" src=images/food4.png>
+					<h3>Masala Papad</h3>
+					<p>Where Crunch Meets Masala Magic.</p><span class=price>₹</span></div>
+			</div>
+			<div class=text-center><a href=#menu class="btn btn-primary">Explore Full Menu</a></div>
+		</div>
+	</section>
+	<section class="section-padding menu-snippet" id=menu>
+		<div class=container>
+			<h2 class=section-title>Our Dhaba Menu</h2>
+			<p class=text-center>Discover a wide range of authentic Indian dishes, from flavorful curries and tandoori delights to refreshing beverages.
+				<br>There's something for everyone at Harsh Dhaba!
+				<div class=menu-categories><span>Starters</span> | <span>Main Course (Veg)</span> | <span>Main Course (Non-Veg)</span> | <span>Breads</span> | <span>Rice & Biryani</span> | <span>Desserts</span> | <span>Beverages</span></div>
+				<div class=text-center><a href=MENU.pdf class="btn btn-secondary" target=_blank>View Full Menu (PDF)</a></div>
+		</div>
+	</section>
+	<section class="section-padding bg-light gallery" id=gallery>
+		<div class=container>
+			<h2 class=section-title>Glimpses of Harsh Dhaba</h2>
+			<div class=gallery-grid><img alt="Close up of Dal Makhani dish" src=images/food1.jpg> <img alt="Outdoor seating or Dhaba sign detail" src=images/vibe1.jpg> <img alt="Butter Chicken served on a platter" src=images/food2.jpg> <img alt="Stack of freshly baked Tandoori Roti" src=images/food3.jpg> <img alt="Tall glass of refreshing Lassi" src=images/food4.jpg></div>
+		</div>
+	</section>
+	<section class="section-padding testimonials" id=testimonials>
+		<div class=container>
+			<h2 class=section-title>What Our Guests Say</h2>
+			<div class=testimonial-slider>
+				<div class=testimonial-item><img alt="Happy Customer Photo" src=images/testimonial1.jpg class=testimonial-avatar>
+					<p>"The food at Harsh Dhaba is simply amazing! Authentic taste and great service. A must-visit on Kishangarh Road."
+						<h4>- Anjali K.</h4></div>
+				<div class=testimonial-item><img alt="Another Happy Customer" src=images/testimonial2.jpg class=testimonial-avatar>
+					<p>"We stopped by Harsh Dhaba during our road trip and were so glad we did. The lassi and parathas were perfect!"
+						<h4>- Vikram S.</h4></div>
+			</div>
+		</div>
+	</section>
+	<section class="section-padding bg-dark contact text-light" id=contact>
+		<div class=container>
+			<h2 class=section-title>Visit Us in Khairthal, Rajasthan</h2>
+			<div class=contact-grid>
+				<div class=contact-info>
+					<h3>Harsh Dhaba and Restaurant</h3>
+					<p><i class="fas fa-map-marker-alt"></i> <a href=https://maps.app.goo.gl/yVPnS948oz6T8gE49>Opp. Galaxy Green City,<br>Kishangarh Road,<br>Khairthal, Rajasthan - [301404]</a>
+						<p><i class="fas fa-phone"></i> <a href=tel:+919251336336>+91 [9251336336]</a>
+							<p><i class="fas fa-envelope"></i> <a href=mailto:harshrestaurant@gmail.com>harshrestaurantkhairthal@gmail.com</a>
+								<p><i class="fas fa-clock"></i> Open Daily: 11:00 AM - 11:00 PM (Example)
+									<div class=social-links><a href=# aria-label=YourOtherSocialMedia><i class="fa-tripadvisor fab"></i></a></div>
+				</div>
+				<div class=contact-map>
+					<iframe allowfullscreen height=450 loading=lazy referrerpolicy=no-referrer-when-downgrade src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28233.905587955043!2d76.658188!3d27.802438000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972bac4873e97c9%3A0x4c240c12b0000000!2sHarsh%20Restaurant%20Khairthal!5e0!3m2!1sen!2sin!4v1747290176253!5m2!1sen!2sin" style=border:0></iframe>
+					<p style=font-size:.8em;margin-top:5px>Note: Map is a placeholder. Please update with exact location.</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+<a href="https://wa.me/919251336336" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
 
 
-/* Hero Section */
-.hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-.hero::before { /* Overlay for better text readability */
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-.hero-content {
-    position: relative; /* To sit on top of the overlay */
-    z-index: 1;
-    max-width: 700px;
-}
-.hero h2 {
-    font-size: 3.5em;
-    margin-bottom: 0.5em;
-    color: #fff; /* White for hero headings */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-.hero p {
-    font-size: 1.4em;
-    margin-bottom: 1.5em;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-}
-
-/* Section Padding & Backgrounds */
-.section-padding {
-    padding: 60px 0;
-}
-.bg-light {
-    background-color: #f9f9f9; /* Slightly off-white */
-}
-.bg-dark {
-    background-color: var(--dark-bg-color);
-}
-.text-light h2, .text-light p, .text-light h3, .text-light a {
-    color: var(--light-text-color);
-}
-.text-light h2.section-title::after {
-    background-color: var(--secondary-color); /* Keep accent for title underline */
-}
-.text-light a:hover {
-    color: var(--secondary-color);
-}
-
-
-/* About Snippet */
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
-    align-items: center;
-}
-.about-image {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-
-/* Specials / Popular Dishes */
-.dishes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-}
-.dish-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.dish-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-.dish-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.dish-card h3 {
-    font-size: 1.5em;
-    margin-top: 15px;
-    color: var(--text-color);
-}
-.dish-card p {
-    font-size: 0.9em;
-    padding: 0 15px;
-    color: #666;
-}
-.dish-card .price {
-    display: block;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--accent-color);
-    margin: 10px 0 20px;
-}
-.text-center {
-    text-align: center;
-}
-
-/* Menu Snippet */
-.menu-categories {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.1em;
-}
-.menu-categories span {
-    margin: 0 10px;
-    padding: 5px 0;
-    color: #555;
-    border-bottom: 2px solid transparent;
-    cursor: pointer; /* If you add filtering later */
-}
-.menu-categories span:hover {
-    color: var(--primary-color);
-    border-bottom-color: var(--primary-color);
-}
-
-/* Gallery */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-}
-.gallery-grid img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
-
-/* Testimonials */
-.testimonial-slider {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-.testimonial-item {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    text-align: center;
-}
-.testimonial-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid var(--secondary-color);
-}
-.testimonial-item p {
-    font-style: italic;
-    color: #555;
-    margin-bottom: 10px;
-}
-.testimonial-item h4 {
-    color: var(--text-color);
-    font-family: var(--font-primary);
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-/* Contact Section */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: flex-start;
-}
-.contact-info p {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-}
-.contact-info i {
-    margin-right: 10px;
-    color: var(--secondary-color);
-    width: 20px;
-}
-.social-links a {
-    font-size: 1.5em;
-    margin-right: 15px;
-    color: var(--light-text-color);
-    transition: color 0.3s ease;
-}
-.social-links a:hover {
-    color: var(--secondary-color);
-}
-.contact-map {
-    width: 100%;
-    overflow: hidden;
-}
-.contact-map iframe {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: block;
-    border: none;
-    border-radius: 8px;
-    height: 300px;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #ccc;
-    text-align: center;
-    padding: 25px 0;
-    font-size: 0.9em;
-}
-footer p {
-    margin-bottom: 5px;
-}
-footer .fa-heart {
-    color: var(--primary-color);
-}
-
-/* css/style.css (for specific pages) */
-
-/* Page Banner for About, Menu, Gallery pages */
-.page-banner {
-    padding: 80px 0;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-.page-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5); /* Dark overlay */
-}
-.page-banner .container {
-    position: relative;
-    z-index: 1;
-}
-.page-banner h1 {
-    font-size: 3em;
-    color: white;
-    margin-bottom: 0;
-}
-
-/* About Page - Full Content */
-.about-full-content article {
-    margin-bottom: 40px;
-}
-.about-full-content h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 10px;
-    display: inline-block;
-}
-.about-full-content p {
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-.inline-image {
-    max-width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin-bottom: 15px;
-}
-.inline-image.right {
-    float: right;
-    margin-left: 20px;
-}
-.inline-image.left {
-    float: left;
-    margin-right: 20px;
-}
-.about-full-content article::after { /* Clearfix */
-    content: "";
-    clear: both;
-    display: table;
-}
-.team-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-.team-member {
-    text-align: center;
-    max-width: 200px;
-}
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 3px solid var(--secondary-color);
-}
-.team-member h4 {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    color: var(--text-color);
-}
-.team-member p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-/* Menu Page - Specifics */
-.menu-download {
-    margin-bottom: 40px;
-}
-.menu-download p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-}
-.menu-download .btn i {
-    margin-right: 8px;
-}
-hr.menu-divider {
-    margin: 30px auto;
-    width: 50%;
-    border: 0;
-    border-top: 1px solid #eee;
-}
-.menu-category {
-    margin-bottom: 40px;
-}
-.menu-category h2 {
-    font-size: 1.8em;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--secondary-color);
-    display: flex;
-    align-items: center;
-}
-.menu-category h2 i {
-    margin-right: 10px;
-    color: var(--accent-color);
-}
-.menu-items-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-.menu-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.menu-item h3 {
-    font-size: 1.3em;
-    color: var(--text-color);
-    margin-bottom: 8px;
-    font-family: var(--font-primary);
-    font-weight: 600;
-}
-.menu-item p {
-    font-size: 0.95em;
-    color: #555;
-    margin-bottom: 12px;
-    flex-grow: 1;
-}
-.menu-item .price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--accent-color);
-    text-align: right;
-    margin-top: auto;
-}
-
-/* Gallery Page - Full Grid */
-.full-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-}
-.gallery-image-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.gallery-image-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease-out;
-}
-.gallery-image-item:hover img {
-    transform: scale(1.1);
-}
-.gallery-image-item .caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.7);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 0.9em;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.gallery-image-item:hover .caption {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Preloader Styles */
-/* Preloader container */
-#preloader {
-  background: #fff3e0;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  z-index: 9999;
-  color: #6d4c41;
-}
-
-/* Handi pot */
-.handi {
-  width: 100px;
-  height: 60px;
-  background: #a0522d;
-  border-radius: 50% 50% 40% 40%;
-  position: relative;
-  overflow: hidden;
-  animation: shake 1s infinite ease-in-out;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Bubbles inside handi */
-.bubble {
-  width: 10px;
-  height: 10px;
-  background: #fff8dc;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 10px;
-  left: 45px;
-  animation: bubbleUp 2s infinite ease-in;
-  opacity: 0.8;
-}
-
-.bubble2 {
-  left: 55px;
-  animation-delay: 1s;
-}
-
-@keyframes bubbleUp {
-  0% { transform: translateY(0) scale(1); opacity: 1; }
-  100% { transform: translateY(-40px) scale(1.5); opacity: 0; }
-}
-
-/* Steam rising */
-.steam {
-  width: 10px;
-  height: 30px;
-  background: rgba(255,255,255,0.4);
-  position: absolute;
-  top: -30px;
-  left: 40px;
-  border-radius: 50%;
-  animation: steamUp 3s infinite ease-in-out;
-}
-
-.steam2 {
-  left: 50px;
-  animation-delay: 1.5s;
-}
-
-@keyframes steamUp {
-  0% { transform: translateY(0) scale(1); opacity: 0.6; }
-  100% { transform: translateY(-40px) scale(1.5); opacity: 0; }
-}
-
-/* Shake animation */
-@keyframes shake {
-  0%, 100% { transform: rotate(0); }
-  25% { transform: rotate(1deg); }
-  75% { transform: rotate(-1deg); }
-}
-
-/* Text */
-#preloader p {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-
-
-
-/* ========== MOBILE RESPONSIVE STYLES ========== */
-
-@media (max-width: 992px) {
-    .about-content, .contact-grid {
-        grid-template-columns: 1fr; /* Stack on smaller screens */
-    }
-    .about-image {
-        margin-bottom: 20px;
-        max-width: 400px; /* Don't let it get too big */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    header h1 { font-size: 1.5em; }
-    .logo { height: 40px; }
-
-    .menu-toggle {
-        display: block; /* Show hamburger */
-    }
-    .nav-menu {
-        display: none; /* Hide by default on mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 70px; /* Adjust based on header height (original value was 70px, seems okay now) */
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        padding: 10px 0;
-    }
-    .nav-menu.active {
-        display: flex; /* Show when active */
-    }
-    .nav-menu li {
-        margin: 10px 20px;
-        text-align: center;
-    }
-    .nav-menu a:hover, .nav-menu a.active {
-        border-bottom: none; /* Remove underline hover for mobile */
-        color: var(--primary-color); /* Keep primary color for active/hover link */
-    }
-    /* .header-actions might need adjustment if other elements are added later, but is fine for now */
-    /* .order-online-btn styling is no longer needed as element is removed from HTML */
-
-    .hero {
-        min-height: 70vh;
-    }
-    .hero h2 {
-        font-size: 2.8em; /* Was 2.5em in original mobile, this is from detailed suggestions */
-    }
-    .hero p {
-        font-size: 1.2em; /* Was 1.1em in original mobile */
-    }
-
-    h2.section-title {
-        font-size: 2em;
-        margin-bottom: 35px;
-    }
-
-    .dishes-grid {
-        grid-template-columns: 1fr; /* Stack cards on mobile - original setting, good */
-    }
-    .gallery-grid { /* Homepage gallery snippet */
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Original setting, check if items are too small */
-    }
-
-    /* About Page - Floated Images */
-    .inline-image.right, .inline-image.left { /* Original setting, good */
-        float: none;
-        display: block;
-        margin: 10px auto 20px;
-        max-width: 80%;
-    }
     
-    /* Page Banners (About, Menu, Gallery) */
-    .page-banner {
-        padding: 60px 0;
-    }
-    .page-banner h1 {
-        font-size: 2.2em; /* Original setting, good */
-    }
-
-    /* Menu Page - Menu Items Grid */
-    .menu-items-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Smaller min for items */
-    }
-
-    /* Gallery Page - Full Gallery Grid & Captions */
-    .full-gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        gap: 15px;
-    }
-    .gallery-image-item:hover img {
-        transform: scale(1); /* Disable zoom on hover/tap for touch devices if caption is always visible */
-    }
-    .gallery-image-item .caption {
-        opacity: 1;
-        transform: translateY(0);
-        position: relative; /* Flow in document */
-        background-color: #f8f8f8; /* Light background for readability */
-        color: var(--text-color);
-        /* transition: none; /* Remove transition as it's always visible */
-        /* Kept transition for smoother initial load if preferred, remove if not desired */
-    }
-    .gallery-image-item img {
-        height: 200px; /* Or use aspect-ratio: 4/3; height: auto; */
-    }
-}
-
-@media (max-width: 480px) {
-    header .container {
-        flex-wrap: wrap; /* Allow logo and nav to wrap if needed */
-        justify-content: space-between;
-    }
-    header h1 { font-size: 1.4em; }
-    .logo { height: 35px; }
-    .nav-menu {
-        top: 60px; /* Adjust if header shrinks. (e.g. 35px logo + padding) */
-    }
-
-    .header-actions { /* This only contains phone-cta now if it's not hidden */
-        /* If phone-cta is the only thing and it's not hidden, this might need revisit */
-        /* width: 100%; /* From original, but only phone-cta might be left */
-        /* justify-content: center; /* From original */
-        /* margin-top: 10px; /* From original */
-    }
-    .phone-cta {
-        display: none; /* Hide phone on very small screens - original setting, good */
-    }
-
-    body {
-        line-height: 1.5;
-    }
-    h1 { font-size: 2.2em; } /* General h1 */
-
-    .hero h2 { font-size: 2.2em; } /* Was 2em */
-    .hero p { font-size: 1em; }
-    .hero { min-height: 60vh; }
-
-    h2.section-title {
-        font-size: 1.7em; /* Was 1.8em */
-        margin-bottom: 30px;
-    }
-    h2.section-title::after {
-        width: 60px;
-        height: 2px;
-    }
-
-    .btn {
-        padding: 8px 16px;
-        font-size: 0.9em;
-    }
-
-    .about-image {
-        max-width: 90%;
-    }
-
-    .dish-card h3 { font-size: 1.3em; }
-    .dish-card p { font-size: 0.85em; }
-
-    .menu-categories { font-size: 1em; }
-    .menu-categories span {
-        margin: 5px 8px;
-        padding: 3px 0;
-    }
-
-    .gallery-grid { /* Homepage gallery snippet */
-        grid-template-columns: repeat(2, 1fr); /* Force 2 columns for better layout than 150px minmax */
-        gap: 10px;
-    }
-    .gallery-grid img {
-        height: 150px;
-    }
-
-    .testimonial-item { padding: 20px; }
-    .testimonial-avatar { width: 70px; height: 70px; }
-
-    .contact-info p { font-size: 1em; }
-    .contact-info i { margin-right: 8px; }
-    .social-links a {
-        font-size: 1.3em;
-        margin-right: 10px;
-    }
-    .contact-map iframe {
-        /* Option 1: Fixed smaller height */
-        height: 220px; 
-        /* Option 2: Aspect Ratio (more modern, preferred if browser support is okay) */
-        /* aspect-ratio: 16/10; */
-        /* height: auto !important; */ /* if using aspect-ratio */
-    }
-
-    /* Page Banners */
-    .page-banner { padding: 40px 0; }
-    .page-banner h1 { font-size: 1.8em; } /* Was 2em */
-
-    /* About Page Full */
-    .about-full-content h2 { font-size: 1.6em; }
-    .team-member { max-width: 150px; }
-    .team-member img { width: 100px; height: 100px; }
-
-    /* Menu Page Specifics */
-    .menu-download p { font-size: 1em; }
-    hr.menu-divider { width: 70%; margin: 25px auto; }
-    .menu-category h2 {
-        font-size: 1.5em;
-        margin-bottom: 15px;
-        padding-bottom: 8px;
-    }
-    .menu-category h2 i { font-size: 0.9em; }
-
-    .menu-items-grid {
-        grid-template-columns: 1fr; /* Stack all menu items */
-        gap: 15px;
-    }
-    .menu-item { padding: 15px; }
-    .menu-item h3 { font-size: 1.15em; }
-    .menu-item p {
-        font-size: 0.9em;
-        margin-bottom: 10px;
-    }
-    .menu-item .price { font-size: 1.1em; }
-
-    /* Gallery Page Full */
-    .full-gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Or repeat(2, 1fr) */
-        gap: 10px;
-    }
-    .gallery-image-item img { height: 150px; }
-    .gallery-image-item .caption {
-        font-size: 0.8em;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 360px) { /* Extra small screens */
-    header h1 {
-        font-size: 1.2em;
-    }
-    .hero h2 {
-        font-size: 1.9em;
-    }
-    h2.section-title {
-        font-size: 1.5em;
-    }
-    .full-gallery-grid {
-        grid-template-columns: 1fr; /* Stack gallery items if too cramped */
-    }
-    .gallery-image-item img {
-        height: 180px; /* Or more, if stacked */
-    }
-    /* Add any other very fine-grained adjustments here */
-}
-
-/* Define the dancing animation */
-/* Define the overall button dancing and zooming animation */
-@keyframes button-dance-zoom {
-    0% {
-        transform: scale(1) translateY(0) rotate(0deg);
-    }
-    25% {
-        transform: scale(1.05) translateY(-4px) rotate(-3deg); /* Zoom in, move up, tilt left */
-    }
-    50% {
-        transform: scale(1) translateY(0) rotate(0deg); /* Return to normal */
-    }
-    75% {
-        transform: scale(1.05) translateY(-4px) rotate(3deg); /* Zoom in, move up, tilt right */
-    }
-    100% {
-        transform: scale(1) translateY(0) rotate(0deg); /* Return to normal */
-    }
-}
-
-/* WhatsApp Floating Button - NOW DANCING CONTINUOUSLY */
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF; /* Icon color */
-    border-radius: 50%; /* Ensures a perfect circle */
-    text-align: center;
-    font-size: clamp(25px, 5vw, 30px); /* Responsive icon size */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Initial subtle shadow */
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Apply the continuous dancing and zooming animation to the button */
-    animation: button-dance-zoom 1.5s ease-in-out infinite; /* Adjust duration as desired */
-    /* Add transition for hover effects (color/shadow) on top of the animation */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* No specific animation for the icon itself now, it moves with the button */
-.whatsapp-float i {
-    display: block; /* Ensures icon is centered correctly */
-}
-
-/* Hover effects for the button (background and shadow) still work */
-.whatsapp-float:hover {
-    background-color: #093b0f; /* Darker green for button on hover */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
-    /* You can add a slight additional transform here if you want an extra 'pop' on hover,
-       e.g., transform: scale(1.08) */
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-    }
-}
+</body>
+</a>
+	<div class=container>
+		<p>© <span id=currentYear></span> Harsh Dhaba and Restaurant. All Rights Reserved. | Visit us in Khairthal!
+			<p>Designed with <i class="fas fa-heart"></i> by [PKB]</div>
+</footer>
+<script src=js/script.js></script>
+<script>
+window.addEventListener("load", function() {
+	setTimeout(function() {
+		document.getElementById("preloader").style.display = "none"
+	}, 2e3)
+})
+</script>
