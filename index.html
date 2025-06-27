@@ -175,21 +175,17 @@
     </script> -->
 
 <script>
-    window.addEventListener("load", function () {
-        // Check if the preloader has already been shown in this session
-        if (sessionStorage.getItem("preloaderShown")) {
-            document.getElementById("preloader").style.display = "none";
-        } else {
-            // If not shown, display it and set the flag
-            setTimeout(function () {
+        window.addEventListener("load", function () {
+            // Check if the preloader has already been shown in this session
+            if (sessionStorage.getItem("preloaderShown")) {
+                // If yes, hide it immediately
                 document.getElementById("preloader").style.display = "none";
-                sessionStorage.setItem("preloaderShown", "true"); // Set flag after hiding
-            }, 2000); // 2 seconds
-        }
-    });
-
-    // Optional: Reset sessionStorage if the user closes the tab completely
-    // window.addEventListener("beforeunload", function() {
-    //     sessionStorage.removeItem("preloaderShown");
-    // });
-</script>
+            } else {
+                // If no, run the animation and then set a flag
+                setTimeout(function () {
+                    document.getElementById("preloader").style.display = "none";
+                    sessionStorage.setItem("preloaderShown", "true"); // Mark preloader as shown for this session
+                }, 2000); // 2 seconds delay
+            }
+        });
+    </script>
